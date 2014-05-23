@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +17,6 @@ namespace SUM.Pipelines
     {
         public override void Process(HttpRequestArgs args)
         {
-
             Item StartItem, itmSiteSettings;
             LinkField lnkfldMaintenaceLink;
             List<Item> lstSiteSettings;
@@ -35,7 +34,6 @@ namespace SUM.Pipelines
                     return;
                 }
                 StartItem = Sitecore.Context.Database.GetItem(strstartItem);
-
                 if (StartItem != null)
                 {
                     Log.Info("Executing SUM Pipeline", HttpContext.Current.Request);
@@ -55,7 +53,7 @@ namespace SUM.Pipelines
                                     lnkfldMaintenaceLink = itmSiteSettings.Fields["MaintenanceLink"];
                                     if (Context.Item.ID.ToString() != (Context.Database.GetItem(lnkfldMaintenaceLink.TargetID)).ID.ToString())
                                     {
-                                        HttpContext.Current.Response.Redirect(LinkManager.GetItemUrl(Context.Database.GetItem(lnkfldMaintenaceLink.TargetID)), true);
+                                        HttpContext.Current.Response.Redirect(LinkManager.GetItemUrl(Context.Database.GetItem(lnkfldMaintenaceLink.TargetID)), false);
                                     }
 
                                 }
@@ -65,11 +63,9 @@ namespace SUM.Pipelines
 
                 }
                 Log.Info("Executed SUM Pipeline", HttpContext.Current.Request);
-
             }
             catch (Exception e)
             {
-
                 Log.Error("Error - SUM pipeline :", e);
             }
         }
