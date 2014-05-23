@@ -1,0 +1,1 @@
+Site Under Maintenance – SUM allows to place your SITECORE website under maintenance mode and display a healthy message to your website visitors. This module come in handy while you might be carrying out maintenance, deployments, fixing defects, upgrading your website, moving or restructuring your content.
