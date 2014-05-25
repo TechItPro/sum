@@ -1,6 +1,0 @@
-F:\tfsprojects\sitecore\sum\SUM.Pipelines\bin\Release\SUM.Pipelines.dll
-F:\tfsprojects\sitecore\sum\SUM.Pipelines\bin\Release\SUM.Pipelines.pdb
-F:\tfsprojects\sitecore\sum\SUM.Pipelines\bin\Release\Sitecore.Kernel.dll
-F:\tfsprojects\sitecore\sum\SUM.Pipelines\obj\Release\SUM.Pipelines.csprojResolveAssemblyReference.cache
-F:\tfsprojects\sitecore\sum\SUM.Pipelines\obj\Release\SUM.Pipelines.dll
-F:\tfsprojects\sitecore\sum\SUM.Pipelines\obj\Release\SUM.Pipelines.pdb
